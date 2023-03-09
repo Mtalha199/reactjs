@@ -1,6 +1,7 @@
 import React from "react";
 import Data from "./Data";
 import Sdata from "./Sdata";
+import EventHandling from "./EventHandling";
 function mydata(val){
     return(
     <>
@@ -14,7 +15,9 @@ function mydata(val){
 function App(){
     return(
         <>
+        
         {Sdata.map(mydata)}
+        <EventHandling />
         </>
     )
 }
