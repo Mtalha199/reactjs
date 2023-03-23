@@ -1,23 +1,26 @@
 function missedGoal() {
-    return (
-        <h1>Missed Goal</h1>
-    );
-}
-const madeGoal=()=>{
     return
-        <h1>Made a Goal</h1>
+
+//      <h1>Missed Goal</h1>
     
-}
- 
+// }
+// function madeGoal(){
+//     return
+//     ( <h1>Made a Goal </h1>
+// )}
 
-function Conditional(props){
 
-    const isGoal=props.isGoal;
-    if(isGoal){
-    return 
-         <madeGoal />
+// function Conditional(props){
+//     const isGoal=props.isGoal;
 
-    }
-     return   <missedGoal />
+    
+    
+//     return(
+//         <> 
+//     <madeGoal /> 
+
+//      <missedGoal />
+//      </>
+// )
 }
 export default Conditional;

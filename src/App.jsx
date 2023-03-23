@@ -2,7 +2,8 @@ import React from "react";
 import Data from "./Data";
 import Sdata from "./Sdata";
 import EventHandling from "./EventHandling";
-import Conditional from "./Conditional";
+import List from "./List";
+// import Conditional from "./Conditional";
 function mydata(val){
     return(
     <>
@@ -19,8 +20,9 @@ function App(){
 
         {Sdata.map(mydata)}
         <EventHandling />
-        <Conditional
-        isGoal={false} />
+        {/* <Conditional
+        isGoal={false} /> */}
+        <List />
         </>
     )
 }export default App;
