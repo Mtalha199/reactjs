@@ -1,28 +1,42 @@
 import React from "react";
-import Data from "./Data";
-import Sdata from "./Sdata";
-import EventHandling from "./EventHandling";
-import List from "./List";
+// import Data from "./Data";
+// import Sdata from "./Sdata";
+// import EventHandling from "./EventHandling";
+// import List from "./List";
+import {Routes,Route} from "react-router-dom"
 // import Conditional from "./Conditional";
-function mydata(val){
-    return(
-    <>
-        <Data 
-         talha={val.button}
-         link={val.link}
-         />
-    </>
-    )
-}
+import About from "./Router/About";
+import Home from "./Router/Home";
+import Contact from "./Router/Contact";
+import Error from "./Router/Error";
+import HomeAgain from "./Router/HomeAgain";
+// function mydata(val){
+//     return(
+//     <>
+//         <Data 
+//          talha={val.button}
+//          link={val.link}
+//          />
+//     </>
+//     )
+// }
 function App(){
     return(
         <>
-
-        {Sdata.map(mydata)}
-        <EventHandling />
+        
+           <Routes>
+            <Route path="/" element={<Home />}>
+                <Route index element={<HomeAgain />}></Route>
+            <Route path="about" element={<About />}></Route>
+            <Route path="Contact" element={<Contact />}></Route>
+            <Route path="*" element={<Error />}></Route>
+            </Route>
+            </Routes>
+        {/* {Sdata.map(mydata)} */}
+        {/* <EventHandling /> */}
         {/* <Conditional
         isGoal={false} /> */}
-        <List />
+        {/* <List /> */}
         </>
     )
 }export default App;
