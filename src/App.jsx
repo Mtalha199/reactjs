@@ -3,14 +3,15 @@ import React from "react";
 // import Sdata from "./Sdata";
 // import EventHandling from "./EventHandling";
 // import List from "./List";
-import {Routes,Route} from "react-router-dom"
+// import {Routes,Route} from "react-router-dom"
 // import Conditional from "./Conditional";
-import About from "./Router/About";
-import Home from "./Router/Home";
-import Contact from "./Router/Contact";
-import Error from "./Router/Error";
-import HomeAgain from "./Router/HomeAgain";
-import Usestate from "./Hooks/Usestate";
+// import About from "./Router/About";
+// import Home from "./Router/Home";
+// import Contact from "./Router/Contact";
+// import Error from "./Router/Error";
+// import HomeAgain from "./Router/HomeAgain";
+// import Usestate from "./Hooks/Usestate";
+import UseStateArray from "./Hooks/useStateArray";
 // function mydata(val){
 //     return(
 //     <>
@@ -24,8 +25,9 @@ import Usestate from "./Hooks/Usestate";
 function App(){
     return(
         <>
-
-            <Usestate />        
+       <UseStateArray />
+{/* 
+            <Usestate />         */}
            {/* <Routes>
             <Route path="/" element={<Home />}>
                 <Route index element={<HomeAgain />}></Route>

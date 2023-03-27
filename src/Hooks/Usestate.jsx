@@ -1,9 +1,16 @@
 import { useState } from "react";
-
+//if we want to toggle value change again by click
 const Usestate = () => {
     const [name ,setName]=useState("My name is Talha Tarar")
     const  Surname=()=>{
-        setName("My Surname is Arshad Mehmood Tarar")
+        let val=name;
+        if(val==="My name is Talha Tarar"){
+            setName("My Surname is Arshad Mehmood Tarar")
+        }else
+        {
+            setName("My name is Talha Tarar")
+        }
+        
     }
     return ( 
         <>
