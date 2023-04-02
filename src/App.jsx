@@ -3,15 +3,17 @@ import React from "react";
 // import Sdata from "./Sdata";
 // import EventHandling from "./EventHandling";
 // import List from "./List";
-// import {Routes,Route} from "react-router-dom"
+import {Routes,Route} from "react-router-dom"
 // import Conditional from "./Conditional";
-// import About from "./Router/About";
-// import Home from "./Router/Home";
-// import Contact from "./Router/Contact";
-// import Error from "./Router/Error";
-// import HomeAgain from "./Router/HomeAgain";
+import About from "./Router/About";
+import Home from "./Router/Home";
+import Contact from "./Router/Contact";
+import Error from "./Router/Error";
+import HomeAgain from "./Router/HomeAgain";
+import Protected from "./Router/protected";
 // import Usestate from "./Hooks/Usestate";
-import UseStateArray from "./Hooks/useStateArray";
+// import UseStateArray from "./Hooks/useStateArray";
+// import UseStateloginpage from "./Hooks/UseStateloginpage";
 // function mydata(val){
 //     return(
 //     <>
@@ -25,17 +27,33 @@ import UseStateArray from "./Hooks/useStateArray";
 function App(){
     return(
         <>
-       <UseStateArray />
+            {/* <UseStateloginpage /> */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       {/* <UseStateArray /> */}
 {/* 
             <Usestate />         */}
-           {/* <Routes>
-            <Route path="/" element={<Home />}>
+           <Routes>
+            <Route path="/" element={<Home/>}>
                 <Route index element={<HomeAgain />}></Route>
-            <Route path="about" element={<About />}></Route>
+            <Route path="about" element={<Protected Component={About}/>}></Route>
             <Route path="Contact" element={<Contact />}></Route>
             <Route path="*" element={<Error />}></Route>
             </Route>
-            </Routes> */}
+            </Routes>
         {/* {Sdata.map(mydata)} */}
         {/* <EventHandling /> */}
         {/* <Conditional
